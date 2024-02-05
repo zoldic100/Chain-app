@@ -1,0 +1,90 @@
+
+.services  {
+
+position: relative;
+
+}
+.services h1::after {
+
+    content: " __ __";
+    color: var(--blue-color);
+    font-weight: 400;
+    display: block;
+    align-content: center;
+
+}
+.services::after {
+    content: '';
+    background-image: url('../../assets/services-left-dec.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -133px;
+    bottom: -300px;
+    width: 300px;
+    height: 368px;
+    z-index: -10;
+}
+.to-blue{
+    color: var(--blue-color);
+}
+.services img {
+    position: absolute;
+    z-index: -20;
+    right: 0px;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 480px) {
+    /* Adjust the values for small devices */
+  
+    .services img  {
+      top: -100px ;
+      right: -50px ;
+      min-width: 1000px;
+    }
+    .services::after {
+       
+        left: -25px;
+        min-width: 300px;
+        z-index: -10;
+    }
+  
+  }
+@media (min-width: 481px) and (max-width: 719px) {
+    /* Adjust the values for small devices */
+
+    .services img  {
+        top: -80px ;
+        right: -50px ;
+        min-width: 1200px;
+    }
+    .services::after {
+       
+        left: -25px;
+        min-width: 300px;
+        z-index: -10;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+
+    /* Adjust the values for medium devices */
+    .services img  {
+        top: -80px ;
+        right: -50px ;
+        min-width: 600px;
+      }
+}
+
+@media (min-width: 1025px) {
+
+    /* Original styles for large devices */
+    .services img {
+
+        top: -150px;
+        right: -50px;
+        min-width: 1000px;
+
+    }
+}

@@ -1,0 +1,79 @@
+.pricing h1::after {
+    content: " __ __";
+    color: var(--blue-color);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+.pricing-card {
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+    border-radius: 50px;
+    padding: 90px 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.pricing-card:before {
+    background-image: url('../../assets/regular-table-top.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    content: '';
+    width: 274px;
+    height: 221px;
+}
+
+.pricing-card:after {
+    background-image: url('../../assets/regular-table-bottom.png');
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    content: '';
+    width: 370px;
+    height: 171px;
+}
+
+.pricing-card-pro {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
+    border-radius: 50px;
+    padding: 120px 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.pricing-card-pro:before {
+    background-image: url('../../assets/pro-table-top.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    content: '';
+    width: 281px;
+    height: 251px;
+}
+.pricing-card-pro:after {
+    background-image: url('../../assets/pro-table-bottom.png');
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    content: '';
+    width: 100%;
+    height: 201px;
+}
+
+.pricing-cards .icon img {
+    width: 120px;
+    height: 106px;
+    margin-bottom: 30px;
+}
